@@ -1,0 +1,19 @@
+/*Esto es un comentario en CSS */
+body/*Selector de componente de la página*/
+{
+    background-color: skyblue;
+}
+
+#sobre-mi /*Selector de id*/
+{
+    background-color: yellowgreen;
+}
+.menu_option/*Selector de clase*/
+{
+    background-color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu_option:hover/*Selecciona sólo el seleccionado*/
+{
+    background-color: white;
+}

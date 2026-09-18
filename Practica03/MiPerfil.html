@@ -6,6 +6,7 @@
     <meta name="description" content="Mi perfil de estudiante">
     <title>Bertha Hernández Aranda @T.S.U. en Desarrollo de Sotware Multiplataforma </title>
     <link id="mi-favicon" rel="icon" href="assets/images/perfil.png" type="image/png"> 
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <!-- ==================== -->
@@ -13,17 +14,17 @@
     <!-- ==================== -->
      <nav id="menu"> <!-- Etiqueta de semantica con el atributo id-->
         <ul>
-            <li>Inicio</li>
-            <li>Acerca de mí</li>
-            <li>Aspiraciones</li>
-            <li>Hobbies</li>
-            <li>Favoritos</li>
-            <li>Redes Sociales</li>            
+            <li class="menu_option">Inicio</li>
+            <li class="menu_option">Acerca de mí</li>
+            <li class="menu_option">Aspiraciones</li>
+            <li class="menu_option">Hobbies</li>
+            <li class="menu_option">Favoritos</li>
+            <li class="menu_option">Redes Sociales</li>            
         </ul>
      </nav>
 
      <!-- Acerca de mí -->
-      <section>
+      <section id="sobre-mi">
         <h2> 👤 Acerca de mí </h2>
         <div> <!-- Etiqueta de estructura que agrupa elementos -->
             <div>
@@ -150,7 +151,7 @@
         </div>
        </section>
 
-       <!-- ============================= -->
+    <!-- ============================= -->
     <!-- REDES SOCIALES -->
     <!-- ============================= -->
 
@@ -328,5 +329,18 @@
 
     </section>
     
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+     
+    <footer>
+        <p>
+            Mi Primera Página Web
+        </p>
+        <p id="anio"></p>
+        <a href="#inicio"> <!-- Anchor / Ancla redireccionamiento en tu misma página -->
+            ↑ Volver al inicio
+        </a>
+    </footer>
 </body>
 </html>
