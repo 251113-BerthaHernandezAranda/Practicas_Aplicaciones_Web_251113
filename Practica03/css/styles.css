@@ -86,6 +86,13 @@ nav a:hover {
     z-index: 2;
 }
 
+#inicio{
+  min-height:45vh ;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 130px 5% 50px 3%;
+  background-position: center center;
+}
 .parallax-1{
   background-image: 
   url("../assets/images/b1.jpg");
@@ -128,6 +135,9 @@ nav a:hover {
 
 
 .hero-card h1{
+  font-size: clamp(2rem,3vw,2.8rem);
+  line-height: 1.1;
+  margin: 0 0 12px 0;
   font-size: 3rem;
   margin-bottom: 8px;
 }
@@ -138,17 +148,31 @@ nav a:hover {
 
 /* Modifica tu regla .hero-card existente para que use Flexbox */
 .hero-card {
-  max-width: 850px; /* Aumentado ligeramente para dar espacio al diseño horizontal */
-  padding: 45px;
+  width: 75%;
+  max-width: 900px; /* Aumentado ligeramente para dar espacio al diseño horizontal */
+  padding: 28px 35px;
+  text-align: center;
   display: flex;
-  align-items: center; /* Alinea verticalmente la imagen y el texto al centro */
-  gap: 40px;           /* Añade una separación de 40px entre la imagen y el texto */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Alinea verticalmente la imagen y el texto al centro */
+  gap: 35px;           /* Añade una separación de 40px entre la imagen y el texto */
   text-align: left;    /* Cambiado de center a left para que el texto luzca mejor a la derecha */
 }
 
 /* Agrega esta nueva regla para el contenedor del texto */
 .hero-content {
   flex: 1;             /* Hace que el texto ocupe todo el espacio restante disponible */
+}
+
+.hero-contenido blockquote{
+  max-width: 550px;
+  margin: 18px 0;
+  border-left: 4px solid white;
+  padding: 6px 0 6px 18px;
+  font-size: 1.1rem;
+  font-size: italic;
+  line-height: 1.5;
 }
 
 /* Modifica tu bloquequote existente para remover el centrado automático (margin auto) */
@@ -205,7 +229,7 @@ blockquote {
   color:white;
 }
 .redes{
-  background: #f1f5f9;
+  background: rgb(13, 56, 105);
 }
 
 .contenedor{
@@ -297,7 +321,8 @@ blockquote {
 
 .redes-sociales svg{
   width: 36px;
-
+  height: 36px; /* Fuerza al navegador a renderizar la proporción correcta */
+  flex-shrink: 0; 
 }
 
 /*Secciones*/
@@ -311,3 +336,26 @@ blockquote {
   font-size: 2.4rem;
   margin-bottom: 45px;
 }
+
+.cinco{
+  grid-template-columns: repeat(5, 1fr);
+}
+.tres{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.youtube-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el icono y el texto */
+    text-decoration: none;
+    color: #FF0033; /* Color del texto (Rojo oficial de YouTube) */
+    font-family: sans-serif;
+  }
+
+  /* El truco clave: Definir el tamaño del SVG */
+  .youtube-icon {
+    width: 24px;  /* Cambia este valor para ajustar el tamaño */
+    height: 24px;
+    color: #FF0033; /* Al usar fill="currentColor", el SVG toma este color */
+  }
